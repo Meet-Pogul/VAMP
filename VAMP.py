@@ -66,7 +66,7 @@ def takeCommand():
 
 def weather():
     """Gives weather Report Through Open Weather Map using json"""
-    with open(r"D:\Meet\Python\firstprog\VAMP\OPM.txt", "r") as f:  # get api from file
+    with open(r"OPM.txt", "r") as f:  # get api from file
         api = f.readline()
         api = api.replace("\n", "")
     url = requests.get(
