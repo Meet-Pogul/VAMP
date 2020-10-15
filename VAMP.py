@@ -99,7 +99,7 @@ def mail():
 
     def send_email(email, message):
         """Send email from folowing gmail Id"""
-        GMAIL_ID = 'mspsoftwarex@gmail.com'
+        GMAIL_ID = 'Emailid'
         with open(r"C:\Users\meets\OneDrive\Documents\infomail.txt", "r") as f:  # get password from file
             a = f.readline()
             a = a.replace("\n", "")
@@ -223,7 +223,6 @@ def execute(q3):
         webbrowser.get(chrome).open_new_tab("web.whatsapp.com")
 
     elif 'classroom' in q3 and check:
-        threading.Thread(target=back, args=["open vishruti mam website"]).start()
         webbrowser.get(chrome).open_new_tab("classroom.google.com")
 
     elif 'gmail' in q3 and check:
@@ -259,9 +258,6 @@ def execute(q3):
     elif 'chrome' in q3 and check:
         os.startfile(r'C:/Program Files (x86)/Google/Chrome/Application/chrome.exe')
 
-    elif ('t o r' in q3 or 't o r' in q3) and check:
-        os.startfile(r'D:\Software\Tor Browser\Browser\firefox.exe')
-
     elif ('email' in q3 or 'gmail' in q3 or 'message' in q3) and ('send' in q3 or 'bhejo' in q3):
         mail()
 
@@ -270,13 +266,7 @@ def execute(q3):
         t1.start()
     ######################################################
     elif 'semester' in q3 and check:
-        os.startfile(r'D:\Meet\College\Sem5')
-
-    elif ('timetable' in q3 or 'time table' in q3) and check:
-        os.startfile(r'D:\Meet\College\Sem5\BE-III_5 Sem_2W.jpg')
-
-    elif ('vishruti' in q3) and check:
-        webbrowser.get(chrome).open_new_tab("vishrutidesai.gnomio.com")
+        os.startfile(r'D:\Meet\College\Semester')
     ###################################################################
     elif q3 == "hello" or q3 == "hi" or "who are you" in q3 or q3 == "hai" or "kaun ho" in q3:
         speak("Hello, I am Vamp, i am your virtual assistant developed by meet pogul")
